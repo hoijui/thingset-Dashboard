@@ -1,0 +1,12 @@
+influxdb==5.2.1
+matplotlib==3.0.2
+numpy==1.16.0
+pyserial==3.4
+dash==0.36.0
+dash-core-components==0.43.0
+dash-html-components==0.13.5
+dash-renderer==0.17.0
+dash-table==3.2.0
+python-dotenv==0.10.1
+dash-daq==0.1.0
+pandas==0.24.1

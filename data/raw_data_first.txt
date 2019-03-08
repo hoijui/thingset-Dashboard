@@ -1,0 +1,3 @@
+# {"timestamp":103609, "vBat":13.05, "vSolar":12.62, "iBat":0.02, "iLoad":0.01, "tempInt":19.6, "loadEn":true, "eInputDay_Wh":0.01, "eOutputDay_Wh":0.00, "eInputTotal_Wh":5, "eOutputTotal_Wh":1, "SOC":91, "chgState":1}
+# {"timestamp":103610, "vBat":13.05, "vSolar":12.62, "iBat":0.02, "iLoad":0.01, "tempInt":19.6, "loadEn":true, "eInputDay_Wh":0.01, "eOutputDay_Wh":0.00, "eInputTotal_Wh":5, "eOutputTotal_Wh":1, "SOC":91, "chgState":1}
+# {"timestamp":103611, "vBat":13.05, "vSolar":12.62, "iBat":0.02, "iLoad":0.01, "tempInt":19.6, "loadEn":true, "eInputDay_Wh":0.01, "eOutputDay_Wh":0.00, "eInputTotal_Wh":5, "eOutputTotal_Wh":1, "SOC":91, "chgState":1}
