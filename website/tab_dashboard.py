@@ -2,6 +2,9 @@
 import dash_html_components as html
 
 def content():
+    """
+    ToDo: Doku
+    """
     return html.Div([
         html.Div([
         ], className="three columns"),

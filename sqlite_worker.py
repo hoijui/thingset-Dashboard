@@ -8,9 +8,10 @@ import argparse
 import sqlite3
 import json
 from datetime import datetime
-import serial
-from pandas.io.json import json_normalize
 import time
+import serial
+import pandas as pd
+from pandas.io.json import json_normalize
 
 def out(msg):
     """Print message on command line."""
@@ -30,6 +31,7 @@ def connect_serial(port, baud):
     return ser
 
 def write_data(ser, dbcon, table):
+    global ts_data
     while True:
         if ser.in_waiting > 0:
             try:
@@ -38,6 +40,7 @@ def write_data(ser, dbcon, table):
                     json_data = json.loads(raw_data.strip()[2:])
                     data_frame = json_normalize(json_data)
                     data_frame['time'] = datetime.now()
+                    data_frame.set_index('time')
                     data_frame.to_sql(name=table, con=dbcon, if_exists='append')
                     out("{}: data written to db.".format(data_frame.loc[0]['time']))
             except json.decoder.JSONDecodeError as e:

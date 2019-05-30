@@ -1,3 +1,4 @@
+import sqlite3
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -30,6 +31,7 @@ def create_app():
         elif tab == 'tab-setup':
             return website.tab_setup.content()
 
-    website.tab_graphs.gen_livegraph(app)
+    website.tab_graphs.gen_livegraph1(app)
+    website.tab_graphs.gen_livegraph2(app)
 
     return app
