@@ -1,3 +1,6 @@
+"""Listen on serial port for ThingSet data and write data into
+Influx database."""
+
 import argparse,sys
 import time
 import serial
